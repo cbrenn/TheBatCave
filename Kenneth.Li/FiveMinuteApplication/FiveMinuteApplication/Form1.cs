@@ -13,7 +13,9 @@ namespace FiveMinuteApplication
 {
     public partial class Form1 : Form
     {
-        SoundPlayer player = new SoundPlayer();
+        SoundPlayer huskySong = new SoundPlayer(FiveMinuteApplication.Properties.Resources.Baha_Men___Who_Let_The_Dogs_Out);
+        SoundPlayer cougSong = new SoundPlayer(FiveMinuteApplication.Properties.Resources.fail_trombone_01);
+
         public Form1()
         {
             InitializeComponent();
@@ -39,9 +41,7 @@ namespace FiveMinuteApplication
             huskyPictureBox.Hide();
             huskyMascotPictureBox.Show();
             label1.Hide();
-            player = new
-            SoundPlayer(FiveMinuteApplication.Properties.Resources.Baha_Men___Who_Let_The_Dogs_Out);
-            player.Play();
+            huskySong.Play();
             playHuskySong.Show();
             stopHuskySong.Show();
 
@@ -54,14 +54,12 @@ namespace FiveMinuteApplication
 
         private void stopHuskySong_Click(object sender, EventArgs e)
         {
-            player.Stop();
+            huskySong.Stop();
         }
 
         private void playHuskySong_Click(object sender, EventArgs e)
         {
-            player = new
-            SoundPlayer(FiveMinuteApplication.Properties.Resources.Baha_Men___Who_Let_The_Dogs_Out);
-            player.Play();
+            huskySong.Play();
         }
 
         private void cougPictureBox_Click(object sender, EventArgs e)
@@ -69,9 +67,8 @@ namespace FiveMinuteApplication
             label2.Hide();
             cougPictureBox.Hide();
             cougFailPictureBox.Show();
-            player = new SoundPlayer(FiveMinuteApplication.Properties.Resources.fail_trombone_01);
-            MessageBox.Show("Sorry, you don't get a cool song snippet, instead you get a fail song snippet!");
-            player.Play();
+            cougSong.Play();
+            MessageBox.Show("Sorry, you don't get a cool song!");
         }
     }
 }
