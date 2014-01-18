@@ -121,4 +121,7 @@
   <data name="Baha_Men___Who_Let_The_Dogs_Out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Baha Men - Who Let The Dogs Out.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="fail_trombone_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fail-trombone-01.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

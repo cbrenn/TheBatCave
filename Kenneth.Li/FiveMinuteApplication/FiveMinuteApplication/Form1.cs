@@ -17,8 +17,11 @@ namespace FiveMinuteApplication
         public Form1()
         {
             InitializeComponent();
-            huskyGradPictureBox.Hide();
+            huskyMascotPictureBox.Hide();
+            playHuskySong.Hide();
             stopHuskySong.Hide();
+            cougFailPictureBox.Hide();
+            MessageBox.Show("Please have your sound on, but not too loud, thanks :)");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -33,18 +36,20 @@ namespace FiveMinuteApplication
 
         private void huskyPictureBox_Click_1(object sender, EventArgs e)
         {
-            huskyGradPictureBox.Show();
+            huskyPictureBox.Hide();
+            huskyMascotPictureBox.Show();
             label1.Hide();
             player = new
             SoundPlayer(FiveMinuteApplication.Properties.Resources.Baha_Men___Who_Let_The_Dogs_Out);
             player.Play();
+            playHuskySong.Show();
             stopHuskySong.Show();
 
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
-            player.Stop();
+            
         }
 
         private void stopHuskySong_Click(object sender, EventArgs e)
@@ -52,5 +57,21 @@ namespace FiveMinuteApplication
             player.Stop();
         }
 
+        private void playHuskySong_Click(object sender, EventArgs e)
+        {
+            player = new
+            SoundPlayer(FiveMinuteApplication.Properties.Resources.Baha_Men___Who_Let_The_Dogs_Out);
+            player.Play();
+        }
+
+        private void cougPictureBox_Click(object sender, EventArgs e)
+        {
+            label2.Hide();
+            cougPictureBox.Hide();
+            cougFailPictureBox.Show();
+            player = new SoundPlayer(FiveMinuteApplication.Properties.Resources.fail_trombone_01);
+            MessageBox.Show("Sorry, you don't get a cool song snippet, instead you get a fail song snippet!");
+            player.Play();
+        }
     }
 }
