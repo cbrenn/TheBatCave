@@ -34,11 +34,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.Red;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(479, 163);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Tag = "Robin! - TO THE BAT MOBILE!";
+            this.Text = "KA-POW!";
             this.ResumeLayout(false);
 
         }
