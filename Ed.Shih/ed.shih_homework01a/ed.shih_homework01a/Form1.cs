@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ed.shih_homework01
+namespace ed.shih_homework01a
 {
     public partial class Form1 : Form
     {
@@ -18,6 +18,11 @@ namespace ed.shih_homework01
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
